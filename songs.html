@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryuichi sakamoto</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo.jpg" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href=index.html class="header__title" class="logo">Ryuichi Sakamoto</a>
+        </div>
+        <nav>
+            <ul class="header__navigation flex">
+                <li class="active"><a href="songs.html">Songs</a></li>
+                    
+                <li><a href="#"> About</a></li>
+                <li><a href="#">How to use</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+    <main class="main">
+  
+
+        <div class="main__song">
+            <ul>
+                <li class="main__song--upper-title">Trending songs</li>
+
+                <li class="main__song-1 main__song-default">
+                    
+                    <img src="/img/img1.jpg"  class="main__song-img"alt="">
+                    <div class="main__song-img-right">
+
+                        
+                        <div class="column flex-start">
+                        <div class="main__song-title--1">Amore</div>
+                        <div class="main__song-side-title--1">Ryuichi Sakamoto</div>
+                        </div>
+
+                        <i class='bx bx-play-circle music-play' ></i>
+
+                    </div>
+                
+                </li>
+                <li  class="main__song-2 main__song-default">
+
+                    <img src="/img/img2.jpg"  class="main__song-img"alt="">
+                    <div class="main__song-img-right">
+
+                        
+                        <div class="column flex-start">
+                        <div class="main__song-title--1">Thousand knvies</div>
+                        <div class="main__song-side-title--1">Ryuichi Sakamoto</div>
+                        </div>
+
+                        <i class='bx bx-play-circle music-play' ></i>
+
+                    </div>
+                </li>
+                <li class="main__song-3 main__song-default">
+
+                    <img src="/img/img3.jpg"  class="main__song-img"alt="">
+                    <div class="main__song-img-right">
+
+                        
+                        <div class="column flex-start">
+                        <div class="main__song-title--1">Energy flow</div>
+                        <div class="main__song-side-title--1">Ryuichi Sakamoto</div>
+                        </div>
+
+                        <i class='bx bx-play-circle music-play' ></i>
+
+                    </div>
+                </li>
+                <li class="main__song-4 main__song-default">
+
+                    <img src="/img/img4.jpg"  class="main__song-img"alt="">
+                    <div class="main__song-img-right">
+
+                        
+                        <div class="column flex-start">
+                        <div class="main__song-title--1"> merry christmas mr. lawrence</div>
+                        <div class="main__song-side-title--1">Ryuichi Sakamoto</div>
+                        </div>
+
+                        <i class='bx bx-play-circle music-play' ></i>
+
+                    </div>
+                </li>
+                <li class="main__song-5  main__song-default">
+
+                    
+                    <img src="/img/img5.jpg"  class="main__song-img"alt="">
+                    <div class="main__song-img-right">
+
+                        
+                        <div class="column flex-start">
+                        <div class="main__song-title--1">Shining Boy & Little Randy</div>
+                        <div class="main__song-side-title--1">Ryuichi Sakamoto</div>
+                        </div>
+                        <i class='bx bx-play-circle music-play' ></i>
+
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="box">
+           
+            <div class="inner">
+                <div class="icons">
+                    <i class='bx bx-signal-4' ></i>                    
+                    <i class='bx bx-wifi-2'></i>
+                    <i class='bx bxs-battery' ></i>
+                </div>
+
+                <div class="island_popup">
+
+                </div>
+                <div class="line">
+
+                </div>
+                <div class="player">
+                    <div class="wrapper">
+                        <div class="details">
+                            <div class="now-playing">PLAYING x OF y</div>
+                            <div class="track-art"></div>
+                            <div class="track-name">Track Name</div>
+                            <div class="track-artist">Track Artist</div>
+                        </div>
+             
+                        <div class="slider_container">
+                            <div class="current-time">00:00</div>
+                             <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                             <div class="total-duration">00:00</div>
+                        </div>
+             
+                        <div class="slider_container">
+                            <i class="fa fa-volume-down"></i>
+                             <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                             <i class="fa fa-volume-up"></i>
+                        </div>
+             
+                        <div class="buttonsMusic">
+                            <div class="random-track" onclick="randomTrack()">
+                                <i class="fas fa-random fa-2x" title="random"></i>
+                            </div>
+                            <div class="prev-track" onclick="prevTrack()">
+                                 <i class="fa fa-step-backward fa-2x"></i>
+                             </div>
+                             <div class="playpause-track" onclick="playpauseTrack()">
+                                 <i class="fa fa-play-circle fa-5x"></i>
+                             </div>
+                             <div class="next-track" onclick="nextTrack()">
+                                 <i class="fa fa-step-forward fa-2x"></i>
+                             </div>
+                             <div class="repeat-track" onclick="repeatTrack()">
+                                 <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                             </div>
+                        </div>
+             
+                         <div id="wave">
+                             <span class="stroke"></span>
+                             <span class="stroke"></span>
+                             <span class="stroke"></span>
+                             <span class="stroke"></span>
+                             <span class="stroke"></span>
+                             <span class="stroke"></span>
+                             <span class="stroke"></span>
+                         </div>  
+                    </div>
+                </div>
+
+            </div>
+            <i class="btn btn1"></i>
+            <i class="btn btn2"></i>
+
+            <i class="btn btn3"></i>
+
+            <i class="rightSideBtn"></i>
+        </div>
+
+
+
+
+
+    </main>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>

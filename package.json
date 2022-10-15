@@ -1,0 +1,22 @@
+{
+  "name": "ryuichi-sakamoto__web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resetmerlin/ryuichi-sakamoto__web.git"
+  },
+  "author": "merlin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/resetmerlin/ryuichi-sakamoto__web/issues"
+  },
+  "homepage": "https://github.com/resetmerlin/ryuichi-sakamoto__web#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
