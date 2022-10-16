@@ -686,7 +686,10 @@ i.fa-step-backward {
     color: white; }
     @media only screen and (min-width: 74rem) {
       .main__description {
-        left: 61%; } }
+        left: 61%;
+        width: 160rem;
+        font-size: 5rem;
+      } }
     @media only screen and (min-width: 64rem) and (max-width: 74rem) {
       .main__description {
         width: 93rem;
@@ -700,6 +703,10 @@ i.fa-step-backward {
     .main__description span {
       font-size: 5rem;
       font-weight: 700; }
+
+      @media only screen and (min-width: 74rem) {
+        .main__description span {
+          font-size: 7rem; } }
       @media only screen and (min-width: 64rem) and (max-width: 74rem) {
         .main__description span {
           font-size: 4rem; } }
@@ -728,7 +735,12 @@ i.fa-step-backward {
     align-items: center; }
     @media only screen and (min-width: 74rem) {
       .main__nonstop-text {
-        left: 61%; } }
+        left: 61%; 
+      top:57%;
+      width: 153rem;
+      font-size: 4rem;
+      padding: 5rem;
+    } }
     @media only screen and (min-width: 64rem) and (max-width: 74rem) {
       .main__nonstop-text {
         width: 92rem;
