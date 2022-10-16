@@ -71,9 +71,9 @@ body {
 html {
   font-size: 62.5%;
   /* Smartphones (landscape) ---------------- */ }
-  @media only screen and (min-width: 75rem) {
+  @media only screen and (min-width: 74rem) {
     html {
-      font-size: 62.5%; } }
+      font-size: 25.5%; } }
   @media only screen and (min-width: 64rem) and (max-width: 74rem) {
     html {
       font-size: 22%; } }
@@ -699,6 +699,9 @@ i.fa-step-backward {
     font-size: 3rem;
     transition: all 0.3s;
     color: white; }
+    @media only screen and (min-width: 74rem) {
+      .main__description {
+        left: 61%; } }
     @media only screen and (min-width: 64rem) and (max-width: 74rem) {
       .main__description {
         width: 93rem;
@@ -738,6 +741,9 @@ i.fa-step-backward {
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
     align-items: center; }
+    @media only screen and (min-width: 74rem) {
+      .main__nonstop-text {
+        left: 61%; } }
     @media only screen and (min-width: 64rem) and (max-width: 74rem) {
       .main__nonstop-text {
         width: 92rem;
