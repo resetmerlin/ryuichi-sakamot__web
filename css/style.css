@@ -40,10 +40,13 @@ body {
   position: absolute;
   left: 3%;
   color: wheat;
-  width: 35%;
+  width: 150rem;
   height: 100%;
   display: flex;
   padding: 2rem; }
+  @media only screen and (min-width: 64rem) and (max-width: 74rem) {
+    .main__song {
+      font-size: 22%; } }
   .main__song ul {
     display: inline-block;
     list-style: none;
@@ -66,7 +69,20 @@ body {
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  /* Smartphones (landscape) ---------------- */ }
+  @media only screen and (min-width: 75rem) {
+    html {
+      font-size: 62.5%; } }
+  @media only screen and (min-width: 64rem) and (max-width: 74rem) {
+    html {
+      font-size: 22%; } }
+  @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
+    html {
+      font-size: 19.5%; } }
+  @media only screen and (min-width: 20rem) and (max-width: 48rem) {
+    html {
+      font-size: 5%; } }
 
 body {
   box-sizing: border-box; }
@@ -89,6 +105,20 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem; }
 
+/* Smartphones (portrait) ---------------- */
+@media only screen and (max-width: 20rem) {
+  /* Add Your CSS Styling Here */ }
+
+/* Smartphones (landscape) ---------------- */
+@media only screen and (min-width: 20rem) and (max-width: 48rem) {
+  /* Add Your CSS Styling Here */ }
+
+/* Tablets (portrait) -------------------- */
+@media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: portrait) {
+  /* Add Your CSS Styling Here */ }
+
+/* Tablets (landscape) ------------------- */
+/* Old Desktops and laptops ------------------ */
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -179,6 +209,10 @@ body {
     font-weight: 600;
     cursor: pointer;
     margin-left: 10rem; }
+    @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
+      .header__logo {
+        font-size: 1.5rem;
+        margin-left: 4rem; } }
     .header__logo a {
       text-decoration: none;
       color: #fff;
@@ -193,12 +227,18 @@ body {
       text-decoration: none;
       font-size: 3rem;
       color: #fff; }
+      @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
+        .header__navigation a {
+          font-size: 1rem; } }
     .header__navigation li {
       margin: 0 5rem;
       display: inline-block;
       transition: all 0.2s ease;
       cursor: pointer;
       padding: 2rem; }
+      @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
+        .header__navigation li {
+          margin: 0 1.5rem; } }
   .header li:hover {
     transform: translateY(-1rem) scale(1.03);
     border-bottom: 1px solid #fff; }
@@ -282,24 +322,26 @@ body {
   font-weight: 600;
   border: 1px solid transparent;
   width: 100%;
-  height: 93%;
+  height: 98rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  border-radius: 20px;
+  border-radius: 2rem;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
 
 .details {
+  position: absolute;
+  top: 10%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center; }
 
 .track-art {
-  margin: 25px;
-  height: 250px;
-  width: 250px;
+  margin: 2.5rem;
+  height: 25rem;
+  width: 25rem;
   border: 2px solid black;
   background-size: cover;
   background-position: center;
@@ -307,9 +349,9 @@ body {
   -moz-box-shadow: 0px 6px 5px #5f5f5f;
   -webkit-box-shadow: 0px 6px 5px #5f5f5f;
   box-shadow: 0px 6px 5px #5f5f5f;
-  -moz-border-radius: 190px;
-  -webkit-border-radius: 190px;
-  border-radius: 190px; }
+  -moz-border-radius: 19rem;
+  -webkit-border-radius: 19rem;
+  border-radius: 50%; }
 
 .now-playing {
   font-size: 2rem; }
@@ -323,14 +365,16 @@ body {
   justify-content: center; }
 
 .track-artist {
-  margin-top: 5px;
+  margin-top: .5rem;
   font-size: 2rem; }
 
 .buttonsMusic {
+  top: 80%;
+  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
   color: #000; }
 
 .active {
@@ -341,7 +385,7 @@ body {
 .playpause-track,
 .prev-track,
 .next-track {
-  padding: 25px;
+  padding: 2.5rem;
   opacity: 0.8;
   transition: opacity .2s; }
 
@@ -353,17 +397,26 @@ body {
   opacity: 1.0; }
 
 .slider_container {
+  position: absolute;
+  top: 60%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center; }
+  .slider_container--last {
+    position: absolute;
+    top: 56%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .seek_slider,
 .volume_slider {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  height: 5px;
+  height: 0.5rem;
   background: #4b4b4b;
   -webkit-transition: .2s;
   transition: opacity .2s; }
@@ -373,10 +426,10 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 15px;
-  height: 15px;
+  width: 1.5rem;
+  height: 1.5ren;
   background: white;
-  border: 3px solid #3774ff;
+  border: 0.3rem solid #3774ff;
   cursor: pointer;
   border-radius: 100%; }
 
@@ -390,13 +443,17 @@ body {
 .volume_slider {
   width: 30%; }
 
+#wave {
+  position: absolute;
+  top: 70%; }
+
 .current-time,
 .total-duration {
-  padding: 10px; }
+  padding: 1rem; }
 
 i.fa-volume-down,
 i.fa-volume-up {
-  padding: 10px; }
+  padding: 1rem; }
 
 i,
 i.fa-play-circle,
@@ -418,7 +475,7 @@ i.fa-step-backward {
     transform: rotate(359deg); } }
 
 .loader {
-  height: 70px;
+  height: 7rem;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -426,9 +483,9 @@ i.fa-step-backward {
 .loader .stroke {
   background: #f1f1f1;
   height: 150%;
-  width: 10px;
-  border-radius: 50px;
-  margin: 0px 5px;
+  width: 1rem;
+  border-radius: 5rem;
+  margin: 0px 0.5rem;
   animation: animate 1.4s linear infinite; }
 
 @keyframes animate {
@@ -461,7 +518,7 @@ i.fa-step-backward {
 
 .box {
   position: absolute;
-  left: 60%;
+  left: 68%;
   top: 15%;
   width: 57rem;
   height: 110rem;
@@ -555,7 +612,7 @@ i.fa-step-backward {
   .main__img {
     padding: 10rem;
     position: absolute;
-    top: 18%;
+    top: 15%;
     left: 8%;
     background-image: url("/img/background-removebg.png");
     width: 100rem;
@@ -565,6 +622,18 @@ i.fa-step-backward {
     z-index: 1;
     cursor: pointer;
     transition: all 0.3s ease; }
+    @media only screen and (min-width: 64rem) and (max-width: 74rem) {
+      .main__img {
+        top: 25%;
+        left: 12%;
+        width: 67rem;
+        height: 71rem; } }
+    @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
+      .main__img {
+        top: 28%;
+        left: 8%;
+        width: 67rem;
+        height: 70rem; } }
     .main__img:hover {
       transform: scale(1.1);
       border-radius: 50%; }
@@ -577,6 +646,18 @@ i.fa-step-backward {
     left: 9%;
     width: 120rem;
     height: 120rem; }
+    @media only screen and (min-width: 64rem) and (max-width: 74rem) {
+      .main__circle-effect {
+        top: 15%;
+        left: 10%;
+        width: 90rem;
+        height: 91rem; } }
+    @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
+      .main__circle-effect {
+        top: 14%;
+        left: 7%;
+        width: 80rem;
+        height: 80rem; } }
     .main__circle-effect--innerBlurr {
       position: absolute;
       border-radius: 50%;
@@ -586,9 +667,24 @@ i.fa-step-backward {
       height: 85rem;
       background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.6), black), url("/img/images2.jpg");
       box-shadow: 0rem 0rem 8rem 10rem rgba(255, 255, 255, 0.4);
+      background-size: cover;
+      background-position: center;
       z-index: 0;
       display: flex;
       align-items: center; }
+      @media only screen and (min-width: 64rem) and (max-width: 74rem) {
+        .main__circle-effect--innerBlurr {
+          top: 15%;
+          left: 15%;
+          width: 60rem;
+          height: 60rem; } }
+      @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
+        .main__circle-effect--innerBlurr {
+          top: 16%;
+          left: 13%;
+          width: 58rem;
+          height: 58rem;
+          box-shadow: 0rem 0rem 6rem 3rem rgba(255, 255, 255, 0.4); } }
     .main__circle-effect:hover {
       background: radial-gradient(circle, transparent 60%, #fff 30%);
       box-shadow: 0rem 0rem 10rem 10rem rgba(255, 255, 255, 0.3); }
@@ -603,11 +699,30 @@ i.fa-step-backward {
     font-size: 3rem;
     transition: all 0.3s;
     color: white; }
+    @media only screen and (min-width: 64rem) and (max-width: 74rem) {
+      .main__description {
+        width: 93rem;
+        font-size: 3rem;
+        margin-left: 10rem; } }
+    @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
+      .main__description {
+        left: 55%;
+        width: 85rem;
+        font-size: 2.5rem; } }
     .main__description span {
       font-size: 5rem;
       font-weight: 700; }
+      @media only screen and (min-width: 64rem) and (max-width: 74rem) {
+        .main__description span {
+          font-size: 4rem; } }
+      @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
+        .main__description span {
+          font-size: 3.5rem; } }
     .main__description:hover {
       transform: translateY(-6rem); }
+      @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
+        .main__description:hover {
+          transform: translateY(-2rem); } }
   .main__nonstop-text {
     position: absolute;
     top: 50%;
@@ -623,6 +738,24 @@ i.fa-step-backward {
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
     align-items: center; }
+    @media only screen and (min-width: 64rem) and (max-width: 74rem) {
+      .main__nonstop-text {
+        width: 92rem;
+        top: 46%;
+        border-top: 1.5px solid #fff;
+        border-bottom: 1.5px solid #fff;
+        font-size: 1.5rem;
+        margin-left: 10rem; } }
+    @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
+      .main__nonstop-text {
+        left: 55%;
+        /* margin-top: 1.7rem; */
+        padding: 2rem;
+        width: 83rem;
+        top: 48%;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        font-size: 0.8rem; } }
     .main__nonstop-text--scrolling {
       width: 100%;
       position: absolute;

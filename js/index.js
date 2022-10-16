@@ -1,12 +1,15 @@
 const headerTitle = document.querySelector(".header__title");
-
-headerTitle.addEventListener("click", changeText);
+const navTitle1 = document.querySelector(".nav-first");
 
 function changeText(event) {
   headerTitle.classList.toggle("active");
   headerTitle.innerText = "坂本龍";
 }
 
+function changeNav1(event) {
+  navTitle1.classList.toggle("active1");
+  navTitle1.innerText = "歌です";
+}
 let now_playing = document.querySelector(".now-playing");
 let track_art = document.querySelector(".track-art");
 let track_name = document.querySelector(".track-name");
@@ -24,11 +27,6 @@ let wave = document.getElementById("wave");
 let randomIcon = document.querySelector(".fa-random");
 let curr_track = document.createElement("audio");
 
-let track_index = 0;
-let isPlaying = false;
-let isRandom = false;
-let updateTimer;
-
 const mainSong1 = document.querySelector(".main__song-1");
 const mainSong2 = document.querySelector(".main__song-2");
 
@@ -41,74 +39,19 @@ let count2 = 0;
 let count3 = 0;
 let count4 = 0;
 let count5 = 0;
-
+let track_index = 0;
+let isPlaying = false;
+let isRandom = false;
+let updateTimer;
 mainSong1.addEventListener("click", loadTrack1);
-function loadTrack1() {
-  let track_index = 0;
-  count1++;
 
-  loadTrack(track_index);
-  if (count1 % 2 == 0) {
-    pauseTrack();
-    count1 = 0;
-  } else {
-    playTrack();
-  }
-}
 mainSong2.addEventListener("click", loadTrack2);
-function loadTrack2() {
-  let track_index = 1;
-  count2++;
 
-  loadTrack(track_index);
-  if (count2 % 2 == 0) {
-    pauseTrack();
-    count2 = 0;
-  } else {
-    playTrack();
-  }
-}
 mainSong3.addEventListener("click", loadTrack3);
-function loadTrack3() {
-  let track_index = 2;
-  count3++;
-
-  loadTrack(track_index);
-  if (count3 % 2 == 0) {
-    pauseTrack();
-    count3 = 0;
-  } else {
-    playTrack();
-  }
-}
 
 mainSong4.addEventListener("click", loadTrack4);
-function loadTrack4() {
-  let track_index = 3;
 
-  count4++;
-
-  loadTrack(track_index);
-  if (count4 % 2 == 0) {
-    pauseTrack();
-    count4 = 0;
-  } else {
-    playTrack();
-  }
-}
 mainSong5.addEventListener("click", loadTrack5);
-function loadTrack5() {
-  let track_index = 4;
-  count5++;
-
-  loadTrack(track_index);
-  if (count5 % 2 == 0) {
-    pauseTrack();
-    count5 = 0;
-  } else {
-    playTrack();
-  }
-}
 
 const music_list = [
   {
@@ -166,6 +109,69 @@ function loadTrack(track_index) {
   random_bg_color();
 }
 
+function loadTrack1() {
+  let track_index = 0;
+  count1++;
+
+  loadTrack(track_index);
+  if (count1 % 2 == 0) {
+    pauseTrack();
+    count1 = 0;
+  } else {
+    playTrack();
+  }
+}
+
+function loadTrack2() {
+  let track_index = 1;
+  count2++;
+
+  loadTrack(track_index);
+  if (count2 % 2 == 0) {
+    pauseTrack();
+    count2 = 0;
+  } else {
+    playTrack();
+  }
+}
+
+function loadTrack3() {
+  let track_index = 2;
+  count3++;
+
+  loadTrack(track_index);
+  if (count3 % 2 == 0) {
+    pauseTrack();
+    count3 = 0;
+  } else {
+    playTrack();
+  }
+}
+function loadTrack4() {
+  let track_index = 3;
+
+  count4++;
+
+  loadTrack(track_index);
+  if (count4 % 2 == 0) {
+    pauseTrack();
+    count4 = 0;
+  } else {
+    playTrack();
+  }
+}
+function loadTrack5() {
+  let track_index = 4;
+  count5++;
+
+  loadTrack(track_index);
+  if (count5 % 2 == 0) {
+    pauseTrack();
+    count5 = 0;
+  } else {
+    playTrack();
+  }
+}
 function random_bg_color() {
   let hex = [
     "0",
@@ -300,3 +306,5 @@ function setUpdate() {
     total_duration.textContent = durationMinutes + ":" + durationMinutes;
   }
 }
+headerTitle.addEventListener("click", changeText);
+navTitle1.addEventListener("click", changeNav1);
