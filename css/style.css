@@ -69,7 +69,6 @@ body {
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%;
   /* Smartphones (landscape) ---------------- */ }
   @media only screen and (min-width: 74rem) {
     html {
