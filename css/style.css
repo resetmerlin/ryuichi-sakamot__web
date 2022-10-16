@@ -607,6 +607,17 @@ i.fa-step-backward {
     z-index: 1;
     cursor: pointer;
     transition: all 0.3s ease; }
+
+
+    @media only screen and (min-width: 74rem) {
+      .main__img {
+
+        top: 23%;
+        left: 11%;
+        width: 112rem;
+        height: 107rem;
+
+      } }
     @media only screen and (min-width: 64rem) and (max-width: 74rem) {
       .main__img {
         top: 25%;
@@ -631,6 +642,19 @@ i.fa-step-backward {
     left: 9%;
     width: 120rem;
     height: 120rem; }
+
+
+    
+    @media only screen and (min-width: 74rem) {
+      .main__circle-effect {
+
+
+        top: 7%;
+        left: 14%;
+        width: 140rem;
+        height: 140rem;
+
+      } }
     @media only screen and (min-width: 64rem) and (max-width: 74rem) {
       .main__circle-effect {
         top: 15%;
@@ -656,7 +680,22 @@ i.fa-step-backward {
       background-position: center;
       z-index: 0;
       display: flex;
+
+
       align-items: center; }
+
+    
+      @media only screen and (min-width: 74rem) {
+        .main__circle-effect--innerBlurr  {
+  
+  
+          top: 12%;
+          left: 13%;
+          width: 105rem;
+          height: 105rem;
+  
+        } }
+
       @media only screen and (min-width: 64rem) and (max-width: 74rem) {
         .main__circle-effect--innerBlurr {
           top: 15%;
@@ -736,8 +775,7 @@ i.fa-step-backward {
     @media only screen and (min-width: 74rem) {
       .main__nonstop-text {
         left: 61%; 
-      top:57%;
-      width: 153rem;
+        top: 51%;      width: 153rem;
       font-size: 4rem;
       padding: 5rem;
     } }
