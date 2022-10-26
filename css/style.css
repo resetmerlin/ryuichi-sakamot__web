@@ -69,19 +69,28 @@ body {
   box-sizing: inherit; }
 
 html {
-}
-  @media only screen and (min-width: 74rem) {
+  /*
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/ }
+  @media only screen and (min-width: 32rem) and (max-width: 48rem) {
     html {
-      font-size: 25.5%; } }
-  @media only screen and (min-width: 64rem) and (max-width: 74rem) {
+      font-size: 62.5%; } }
+  @media only screen and (min-width: 48.1rem) and (max-width: 76.8rem) {
     html {
-      font-size: 22%; } }
-  @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
+      font-size: 14.5%; } }
+  @media only screen and (min-width: 76.9rem) and (max-width: 102.4rem) {
+    html {
+      font-size: 23.5%; } }
+  @media only screen and (min-width: 102.5rem) and (max-width: 120rem) {
     html {
       font-size: 19.5%; } }
-  @media only screen and (min-width: 20rem) and (max-width: 48rem) {
+  @media only screen and (min-width: 120.1rem) {
     html {
-      font-size: 5%; } }
+      font-size: 62.5%; } }
 
 body {
   box-sizing: border-box; }
@@ -104,6 +113,20 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem; }
 
+/* Smartphones (portrait) ---------------- */
+@media only screen and (max-width: 20rem) {
+  /* Add Your CSS Styling Here */ }
+
+/* Smartphones (landscape) ---------------- */
+@media only screen and (min-width: 20rem) and (max-width: 48rem) {
+  /* Add Your CSS Styling Here */ }
+
+/* Tablets (portrait) -------------------- */
+@media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: portrait) {
+  /* Add Your CSS Styling Here */ }
+
+/* Tablets (landscape) ------------------- */
+/* Old Desktops and laptops ------------------ */
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -194,10 +217,6 @@ body {
     font-weight: 600;
     cursor: pointer;
     margin-left: 10rem; }
-    @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
-      .header__logo {
-        font-size: 1.5rem;
-        margin-left: 4rem; } }
     .header__logo a {
       text-decoration: none;
       color: #fff;
@@ -212,18 +231,12 @@ body {
       text-decoration: none;
       font-size: 3rem;
       color: #fff; }
-      @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
-        .header__navigation a {
-          font-size: 1rem; } }
     .header__navigation li {
       margin: 0 5rem;
       display: inline-block;
       transition: all 0.2s ease;
       cursor: pointer;
       padding: 2rem; }
-      @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
-        .header__navigation li {
-          margin: 0 1.5rem; } }
   .header li:hover {
     transform: translateY(-1rem) scale(1.03);
     border-bottom: 1px solid #fff; }
@@ -607,29 +620,6 @@ i.fa-step-backward {
     z-index: 1;
     cursor: pointer;
     transition: all 0.3s ease; }
-
-
-    @media only screen and (min-width: 74rem) {
-      .main__img {
-
-        top: 23%;
-        left: 11%;
-        width: 112rem;
-        height: 107rem;
-
-      } }
-    @media only screen and (min-width: 64rem) and (max-width: 74rem) {
-      .main__img {
-        top: 25%;
-        left: 12%;
-        width: 67rem;
-        height: 71rem; } }
-    @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
-      .main__img {
-        top: 28%;
-        left: 8%;
-        width: 67rem;
-        height: 70rem; } }
     .main__img:hover {
       transform: scale(1.1);
       border-radius: 50%; }
@@ -642,31 +632,6 @@ i.fa-step-backward {
     left: 9%;
     width: 120rem;
     height: 120rem; }
-
-
-    
-    @media only screen and (min-width: 74rem) {
-      .main__circle-effect {
-
-
-        top: 7%;
-        left: 14%;
-        width: 140rem;
-        height: 140rem;
-
-      } }
-    @media only screen and (min-width: 64rem) and (max-width: 74rem) {
-      .main__circle-effect {
-        top: 15%;
-        left: 10%;
-        width: 90rem;
-        height: 91rem; } }
-    @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
-      .main__circle-effect {
-        top: 14%;
-        left: 7%;
-        width: 80rem;
-        height: 80rem; } }
     .main__circle-effect--innerBlurr {
       position: absolute;
       border-radius: 50%;
@@ -680,35 +645,7 @@ i.fa-step-backward {
       background-position: center;
       z-index: 0;
       display: flex;
-
-
       align-items: center; }
-
-    
-      @media only screen and (min-width: 74rem) {
-        .main__circle-effect--innerBlurr  {
-  
-  
-          top: 12%;
-          left: 13%;
-          width: 105rem;
-          height: 105rem;
-  
-        } }
-
-      @media only screen and (min-width: 64rem) and (max-width: 74rem) {
-        .main__circle-effect--innerBlurr {
-          top: 15%;
-          left: 15%;
-          width: 60rem;
-          height: 60rem; } }
-      @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
-        .main__circle-effect--innerBlurr {
-          top: 16%;
-          left: 13%;
-          width: 58rem;
-          height: 58rem;
-          box-shadow: 0rem 0rem 6rem 3rem rgba(255, 255, 255, 0.4); } }
     .main__circle-effect:hover {
       background: radial-gradient(circle, transparent 60%, #fff 30%);
       box-shadow: 0rem 0rem 10rem 10rem rgba(255, 255, 255, 0.3); }
@@ -723,40 +660,11 @@ i.fa-step-backward {
     font-size: 3rem;
     transition: all 0.3s;
     color: white; }
-    @media only screen and (min-width: 74rem) {
-      .main__description {
-        left: 61%;
-        width: 160rem;
-        font-size: 5rem;
-      } }
-    @media only screen and (min-width: 64rem) and (max-width: 74rem) {
-      .main__description {
-        width: 93rem;
-        font-size: 3rem;
-        margin-left: 10rem; } }
-    @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
-      .main__description {
-        left: 55%;
-        width: 85rem;
-        font-size: 2.5rem; } }
     .main__description span {
       font-size: 5rem;
       font-weight: 700; }
-
-      @media only screen and (min-width: 74rem) {
-        .main__description span {
-          font-size: 7rem; } }
-      @media only screen and (min-width: 64rem) and (max-width: 74rem) {
-        .main__description span {
-          font-size: 4rem; } }
-      @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
-        .main__description span {
-          font-size: 3.5rem; } }
     .main__description:hover {
       transform: translateY(-6rem); }
-      @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
-        .main__description:hover {
-          transform: translateY(-2rem); } }
   .main__nonstop-text {
     position: absolute;
     top: 50%;
@@ -772,31 +680,6 @@ i.fa-step-backward {
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
     align-items: center; }
-    @media only screen and (min-width: 74rem) {
-      .main__nonstop-text {
-        left: 61%; 
-        top: 51%;      width: 153rem;
-      font-size: 4rem;
-      padding: 5rem;
-    } }
-    @media only screen and (min-width: 64rem) and (max-width: 74rem) {
-      .main__nonstop-text {
-        width: 92rem;
-        top: 46%;
-        border-top: 1.5px solid #fff;
-        border-bottom: 1.5px solid #fff;
-        font-size: 1.5rem;
-        margin-left: 10rem; } }
-    @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
-      .main__nonstop-text {
-        left: 55%;
-        /* margin-top: 1.7rem; */
-        padding: 2rem;
-        width: 83rem;
-        top: 48%;
-        border-top: 1px solid #fff;
-        border-bottom: 1px solid #fff;
-        font-size: 0.8rem; } }
     .main__nonstop-text--scrolling {
       width: 100%;
       position: absolute;
